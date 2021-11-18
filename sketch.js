@@ -204,4 +204,6 @@ function reset(){
   
   score = 0;
   
+  
+  setCollider() true
 }
