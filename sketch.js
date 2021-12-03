@@ -94,7 +94,7 @@ function draw() {
     score = score + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
     
-    if((touches.length > 0 || keyDown("KEY_DOWN")) && trex.y  >= height-120) {
+    if((touches.length > 0 || keyDown("SPACE")) && trex.y  >= height-120) {
       jumpSound.play( )
       trex.velocityY = -10;
        touches = [];
@@ -132,7 +132,7 @@ function draw() {
     obstaclesGroup.setLifetimeEach(-1);
     cloudsGroup.setLifetimeEach(-1);
     
-    if(touches.length>0 || keyDown("KEY_DOWN")) {      
+    if(touches.length>0 || keyDown("SPACE")) {      
       reset();
       touches = []
     }
